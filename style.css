@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;700;800&family=Poppins:wght@400;500;600;700;800&family=Quicksand:wght@500;700&display=swap");
+
+:root {
+  color: #111111, #f3f3f3;
+}
+
+*,
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Nunito", sans-serif;
+}
+
+body {
+  height: 100%; /*revisi nanti*/
+  display: flex;
+  flex-direction: column;
+  color: #f3f3f3;
+}
+
+/* Header IN */
+.header-container {
+  width: 100%;
+  margin-inline: auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-block: 1rem;
+  z-index: 999;
+  box-shadow: 0px 2px 30px 5px #111111;
+}
+
+.logo h1 {
+  color: #111111;
+}
+
+.hamburger {
+  display: none;
+}
+
+.header-container .nav-list ul {
+  display: flex;
+  justify-content: center;
+  gap: 2rem 0rem;
+}
+
+.header-container li {
+  list-style-type: none;
+}
+
+.header-container li a {
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 500;
+  color: #111111;
+  padding: 24px 24px;
+  border-radius: 1px;
+  transition: all 0.3 ease-in-out;
+}
+
+.header-container li:hover a {
+  background-color: #f5f5f5;
+  color: #111111;
+}
+
+.header-container li a.active {
+  background-color: #111111;
+  color: #f3f3f3;
+}
+/* Header Out */
+
+/* Responsif IN */
+@media (max-width: 768px) {
+  /* Aturan CSS untuk perangkat mobile */
+}
