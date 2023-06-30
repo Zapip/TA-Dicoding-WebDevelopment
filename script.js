@@ -1,4 +1,4 @@
-// Navbar
+// Navbar active
 var menuItems = document.querySelectorAll("nav ul li a");
 
 menuItems.forEach(function (item) {
@@ -8,4 +8,12 @@ menuItems.forEach(function (item) {
     });
     this.classList.add("active");
   });
+});
+
+// hamburger slide
+const hamburgerToggle = document.querySelector(".hamburger-toggle input");
+const Navbar = document.querySelector(".header-container .nav-list ul");
+
+hamburgerToggle.addEventListener("click", function () {
+  Navbar.classList.toggle("toggle");
 });
