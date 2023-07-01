@@ -74,25 +74,134 @@ body {
 /* Header Out */
 
 /* Main IN */
+
 /* Home In */
 .home-container {
   width: 100%;
   display: flex;
   height: 100vh;
   margin-top: 4px;
-  background-color: red;
-  flex-direction: column-reverse;
-  align-items: center;
-  justify-content: space-evenly;
-}
-
-.home-content {
-  display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 10px 0;
+}
+.home-container > h1 {
+  font-size: 32px;
+  word-spacing: 6px;
+  letter-spacing: 3px;
+}
+.home-container > h1 > span {
+  color: crimson;
 }
 
+.home-img {
+  margin-top: 60px;
+  width: 310px;
+  height: 310px;
+}
+.home-img .circle {
+  width: 100%;
+  height: 100%;
+  background: #111111;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.home-img .circle::after {
+  content: " ";
+  position: absolute;
+  width: 280px;
+  height: 280px;
+  background: #e0e0e0;
+  border-radius: 50%;
+}
+.circle .image {
+  position: relative;
+  width: 280px;
+  height: 280px;
+  border-radius: 50%;
+  z-index: 1;
+  overflow: hidden;
+}
+.image img {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  max-width: 350px;
+  object-fit: cover;
+}
+
+.typing-wrapper {
+  display: inline-flex;
+}
+.typing-wrapper .txt-tetap {
+  font-weight: 700;
+  font-size: 24px;
+}
+
+.typing-wrapper .txt-animasi {
+  margin: 0 0 0 10px;
+  line-height: 35px;
+  height: 32px;
+  overflow: hidden;
+}
+
+.txt-animasi li {
+  list-style: none;
+  font-size: 24px;
+  font-weight: 700;
+  color: crimson;
+  position: relative;
+  animation: slide 16s steps(8) infinite;
+  top: 0;
+}
+@keyframes slide {
+  0% {
+    top: 0;
+  }
+  100% {
+    top: -285px;
+  }
+}
+.txt-animasi li span {
+  position: relative;
+  display: inline-block;
+}
+.txt-animasi li span::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: white;
+  border-left: 2px solid crimson;
+  animation: typing 2s steps(8) infinite;
+}
+@keyframes typing {
+  0% {
+    left: 0;
+    margin: 0;
+  }
+  100% {
+    left: 100%;
+    margin: 0 -35px 0 35px;
+  }
+}
 /* Home Out */
+
+/* About IN */
+.about-container {
+  width: 100%;
+  display: flex;
+  height: 100vh;
+  margin-top: 4px;
+  flex-direction: column;
+  align-items: center;
+  background-color: aqua;
+}
+/* About OUT */
 /* Main OUT */
 
 /* Footer In */
@@ -285,6 +394,13 @@ footer {
   }
 
   /* Hamburger Menu Out */
+
+  /* Home Responsive In */
+  .home-container > h1 {
+    word-spacing: 4px;
+    letter-spacing: 0px;
+  }
+  /* Home Responsive Out */
 
   /* Footer Responsive IN*/
   .footer-container {
