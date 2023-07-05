@@ -77,6 +77,7 @@ body {
 
 /* Home In */
 .home-container {
+  padding-top: 50px;
   width: 100%;
   display: flex;
   height: 100vh;
@@ -195,13 +196,155 @@ body {
 .about-container {
   width: 100%;
   display: flex;
-  height: 100vh;
+  height: 90vh;
   margin-top: 4px;
   flex-direction: column;
-  align-items: center;
-  background-color: aqua;
+  background-color: #111111;
+  color: white;
+}
+.about-container h1 {
+  margin: 90px 0 0 60px;
+  font-size: 32px;
+  word-spacing: 6px;
+  letter-spacing: 3px;
+}
+.about-container span {
+  margin: 10px 0 0 60px;
+  width: 200px;
+  height: 5px;
+  background-color: white;
+  border-radius: 20px;
+  animation: bar-about 3s;
+}
+@keyframes bar-about {
+  0% {
+    width: 0px;
+  }
+  100% {
+    width: 200px;
+  }
+}
+.about-content {
+  margin: 40px 80px 0 80px;
+  display: flex;
+  gap: 30px;
+}
+.about-img img {
+  width: 310px;
+}
+.about-txt {
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+}
+.about-txt h3 {
+  font-size: 27px;
+}
+.about-txt h4 {
+  font-size: 20px;
+}
+.about-txt a {
+  padding-top: 7px;
+  color: white;
+  border-radius: 30px;
+  text-decoration: none;
+  font-size: 27px;
+  width: 150px;
+  height: 50px;
+  background-color: crimson;
+  text-align: center;
+  font-weight: 700;
+  transition: all 0.5s ease-in-out;
+}
+.about-txt a:hover {
+  background-color: white;
+  color: crimson;
 }
 /* About OUT */
+
+/* Skill In */
+.skills-container {
+  width: 100%;
+  display: flex;
+  height: 170vh;
+  margin-top: 4px;
+  flex-direction: column;
+  background-color: #f3f3f3;
+  color: #111111;
+}
+.skills-container h1 {
+  margin: 90px 0 0 60px;
+  font-size: 32px;
+  word-spacing: 6px;
+  letter-spacing: 3px;
+}
+.skills-container span {
+  margin: 10px 0 0 60px;
+  width: 200px;
+  height: 5px;
+  background-color: #111111;
+  border-radius: 20px;
+  animation: bar-skills 3s;
+}
+@keyframes bar-skills {
+  0% {
+    width: 0px;
+  }
+  100% {
+    width: 200px;
+  }
+}
+.skill-content {
+  margin: 50px 80px 0 80px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  row-gap: 40px;
+}
+.skill-content .content {
+  background-color: white;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+  border-radius: 10px;
+  row-gap: 20px;
+  box-shadow: 0px 2px 30px 5px #e0e0e0;
+  transition: all 0.5s ease-in-out;
+}
+.skill-content .content:hover {
+  background-color: crimson;
+  color: white;
+}
+.content i {
+  font-size: 60px;
+}
+.content h3 {
+  font-size: 24px;
+}
+.content p {
+  text-align: justify;
+}
+
+.content.nextPage {
+  background-color: crimson;
+  justify-content: space-evenly;
+  color: white;
+}
+.content.nextPage a {
+  color: white;
+  position: relative;
+  top: 0;
+  transition: all 1s ease-in-out;
+  cursor: pointer;
+}
+.content.nextPage a:hover {
+  top: 50px;
+}
+
+/* Skill Out */
 /* Main OUT */
 
 /* Footer In */
@@ -296,6 +439,49 @@ footer {
     justify-content: center;
     gap: 0rem 4rem;
   }
+
+  /* About In */
+  .about-container {
+    height: 90vh;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+  }
+
+  .about-container h1 {
+    margin: 90px 0 0 0px;
+    font-size: 32px;
+    word-spacing: 6px;
+    letter-spacing: 3px;
+  }
+  .about-container span {
+    margin: 10px 0 0 0px;
+  }
+  .about-img img {
+    width: 210px;
+  }
+  .about-content {
+    margin: 20px 20px 0 20px;
+    align-items: center;
+  }
+
+  .about-content {
+    flex-direction: column;
+  }
+  .about-txt {
+    align-items: center;
+    text-align: center;
+  }
+  .about-txt h3 {
+    font-size: 24px;
+  }
+  .about-txt h4 {
+    font-size: 16px;
+  }
+  .about-txt p {
+    font-size: 12px;
+  }
+  /* About Out */
 
   .footer-column {
     width: 100%;
@@ -396,11 +582,61 @@ footer {
   /* Hamburger Menu Out */
 
   /* Home Responsive In */
+  .home-container {
+    height: 87vh;
+  }
   .home-container > h1 {
     word-spacing: 4px;
     letter-spacing: 0px;
   }
+
   /* Home Responsive Out */
+
+  /* About Responsive IN */
+  .about-container {
+    height: 90vh;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    border: 1px solid blue;
+    padding-bottom: 20px;
+  }
+
+  .about-container h1 {
+    margin: 90px 0 0 0px;
+    font-size: 32px;
+    word-spacing: 6px;
+    letter-spacing: 3px;
+  }
+  .about-container span {
+    margin: 10px 0 0 0px;
+  }
+  .about-img img {
+    width: 210px;
+  }
+  .about-content {
+    margin: 20px 20px 0 20px;
+    align-items: center;
+  }
+
+  .about-content {
+    flex-direction: column;
+  }
+  .about-txt {
+    align-items: center;
+    text-align: justify;
+  }
+  .about-txt h3 {
+    font-size: 24px;
+    text-align: center;
+  }
+  .about-txt h4 {
+    font-size: 16px;
+  }
+  .about-txt p {
+    font-size: 12px;
+  }
+  /* About Responsive Out */
 
   /* Footer Responsive IN*/
   .footer-container {
