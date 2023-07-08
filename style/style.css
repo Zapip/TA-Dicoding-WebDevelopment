@@ -14,7 +14,6 @@ html {
 }
 
 body {
-  height: 100%; /*revisi nanti*/
   display: flex;
   flex-direction: column;
   overflow-x: hidden;
@@ -194,9 +193,10 @@ body {
 
 /* About IN */
 .about-container {
+  padding-top: 60px;
   width: 100%;
   display: flex;
-  height: 90vh;
+  height: 100vh;
   flex-direction: column;
   background-color: #111111;
   color: white;
@@ -242,6 +242,9 @@ body {
 .about-txt h4 {
   font-size: 20px;
 }
+.about-txt p {
+  text-align: justify;
+}
 .about-txt a {
   padding-top: 7px;
   color: white;
@@ -263,6 +266,7 @@ body {
 
 /* Skill In */
 .skills-container {
+  padding-top: 60px;
   width: 100%;
   display: flex;
   height: 170vh;
@@ -303,6 +307,7 @@ body {
 .skill-content .content {
   background-color: white;
   width: 300px;
+  height: 380px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -346,9 +351,10 @@ body {
 
 /* Gallery IN */
 .gallery-container {
+  padding: 60px 0;
   width: 100%;
   display: flex;
-  height: 180vh;
+  height: 100%;
   flex-direction: column;
   background-color: #f3f3f3;
   color: #111111;

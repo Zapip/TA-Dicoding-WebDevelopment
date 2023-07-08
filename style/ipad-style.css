@@ -1,4 +1,4 @@
-@media (min-width: 481px) and (max-width: 767px) {
+@media (min-width: 481px) and (max-width: 1024px) {
   /* Aturan CSS untuk perangkat tablet */
   .header-container {
     flex-direction: column;
@@ -30,7 +30,6 @@
   /* About In */
   .about-container {
     padding-top: 80px;
-    height: 100vh;
     flex-direction: column;
     align-items: center;
     height: 100%;
@@ -76,7 +75,7 @@
   /* Skills In */
   .skills-container {
     padding-top: 80px;
-    height: 230vh;
+    height: 100%;
     align-items: center;
   }
   .skills-container h1 {
@@ -95,7 +94,6 @@
   /* Galerry In */
   .gallery-container {
     padding-top: 80px;
-    height: 250vh;
     flex-direction: column;
     background-color: #f3f3f3;
     color: #111111;
