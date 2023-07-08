@@ -451,7 +451,7 @@ footer {
 }
 
 .footer-container {
-  max-width: 100%;
+  width: 100%;
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
