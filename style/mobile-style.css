@@ -1,0 +1,160 @@
+@media (max-width: 480px) {
+  /* Aturan CSS untuk perangkat mobile */
+  .header-container {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .logo {
+    padding-left: 30px;
+  }
+  .logo h1 {
+    font-size: 20px;
+  }
+
+  /* Hamaburger Menu IN */
+  .hamburger-toggle {
+    display: flex;
+    flex-direction: column;
+    height: 20px;
+    justify-content: space-between;
+    position: relative;
+  }
+
+  .hamburger-toggle input {
+    position: absolute;
+    cursor: pointer;
+    width: 40px;
+    height: 28px;
+    left: -6px;
+    top: -4px;
+    opacity: 0;
+    z-index: 2;
+  }
+
+  .hamburger-toggle span {
+    display: block;
+    width: 28px;
+    height: 3px;
+    background-color: #111111;
+    border-radius: 3px;
+    transition: all 0.7s;
+  }
+
+  /* Hamburger Menu Animation */
+  .hamburger-toggle span:nth-child(2) {
+    transform-origin: 0 0;
+  }
+  .hamburger-toggle span:nth-child(4) {
+    transform-origin: 0 100%;
+  }
+
+  .hamburger-toggle input:checked ~ span:nth-child(2) {
+    transform: rotate(45deg) translate(-1px, -1px);
+  }
+  .hamburger-toggle input:checked ~ span:nth-child(3) {
+    transform: scale(0);
+    opacity: 0;
+  }
+  .hamburger-toggle input:checked ~ span:nth-child(4) {
+    transform: rotate(-45deg) translate(-1px, 0);
+  }
+
+  .header-container .nav-list ul {
+    justify-content: space-evenly;
+    gap: 0;
+    position: absolute;
+    flex-direction: column;
+    width: 80%;
+    height: 100vh;
+    right: 0;
+    top: 0;
+    background-color: white;
+    align-items: center;
+    z-index: -51;
+    padding-bottom: 100px;
+    padding-top: 30%;
+    transform: translateX(100%);
+    transition: 1s all;
+  }
+  .header-container .nav-list ul.toggle {
+    transform: translate(0);
+  }
+  .header-container li a {
+    border-bottom: groove #f3f3f3;
+    font-size: 20px;
+    font-weight: 500;
+    color: #111111;
+    padding: 10px 100px;
+    border-radius: 3px;
+  }
+
+  /* Hamburger Menu Out */
+
+  /* Home Responsive In */
+  .home-container {
+    height: 87vh;
+  }
+  .home-container > h1 {
+    word-spacing: 4px;
+    letter-spacing: 0px;
+  }
+
+  /* Home Responsive Out */
+
+  /* About Responsive IN */
+  .about-container {
+    height: 90vh;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    border: 1px solid blue;
+    padding-bottom: 20px;
+  }
+
+  .about-container h1 {
+    margin: 90px 0 0 0px;
+    font-size: 32px;
+    word-spacing: 6px;
+    letter-spacing: 3px;
+  }
+  .about-container span {
+    margin: 10px 0 0 0px;
+  }
+  .about-img img {
+    width: 210px;
+  }
+  .about-content {
+    margin: 20px 20px 0 20px;
+    align-items: center;
+  }
+
+  .about-content {
+    flex-direction: column;
+  }
+  .about-txt {
+    align-items: center;
+    text-align: justify;
+  }
+  .about-txt h3 {
+    font-size: 24px;
+    text-align: center;
+  }
+  .about-txt h4 {
+    font-size: 16px;
+  }
+  .about-txt p {
+    font-size: 12px;
+  }
+  /* About Responsive Out */
+
+  /* Footer Responsive IN*/
+  .footer-container {
+    flex-direction: column;
+  }
+  .footer-column {
+    width: 100%;
+  }
+
+  /* Footer Responsive Out*/
+}

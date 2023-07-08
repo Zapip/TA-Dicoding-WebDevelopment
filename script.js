@@ -20,7 +20,7 @@ hamburgerToggle.addEventListener("click", function () {
 
 // Smooth scroll
 document.addEventListener("DOMContentLoaded", function () {
-  const navLinks = document.querySelectorAll("nav ul li a");
+  const navLinks = document.querySelectorAll("nav ul li a ");
 
   for (const link of navLinks) {
     link.addEventListener("click", clickHandler);
