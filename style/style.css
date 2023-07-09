@@ -13,7 +13,8 @@ html {
   scroll-behavior: smooth;
 }
 
-body {
+body,
+main {
   display: flex;
   flex-direction: column;
   overflow-x: hidden;
@@ -489,6 +490,10 @@ footer {
   color: #f3f3f3;
   text-decoration: none;
   font-size: 32px;
+  transition: all 0.5s ease;
+}
+.footer-column ul li a:hover {
+  color: crimson;
 }
 .footer-column p {
   margin: 7px 0;
